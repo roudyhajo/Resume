@@ -15,8 +15,7 @@
 \usepackage{ragged2e}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+\fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -38,10 +37,8 @@
   \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -71,10 +68,6 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 %----------HEADING----------
@@ -86,7 +79,7 @@
 \end{center}
 
 \begin{justify}
-    \small{Final-year Computer Science Engineering student specializing in Networks, Cloud Computing, and Security at Polytech Nantes. Passionate about software development, distributed systems, and cloud infrastructure. Seeking a 6-month Software Engineer internship starting February 2027.}
+    \small{Final-year Computer Science Engineering student specializing in Networks, Cloud Computing, and Distributed Systems at Polytech Nantes. Seeking a 22-week Software Engineering / Site Reliability Engineering (SWE/SRE) internship. Available from March 2027 through August 2027 (covering the full Summer 2027 program). Expected Graduation: August 2027.}
 \end{justify}
 
 
@@ -95,10 +88,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Polytech Nantes School of Engineering}{Nantes, France}
-      {Master's Degree in Computer Science (Networks, Security, Cloud Computing)}{Sep. 2024 -- Aug. 2027}
+      {Master's Degree in Computer Science (Networks, Security, Cloud, Distributed Systems)}{Sep. 2024 -- Aug. 2027}
     \resumeSubheading
       {University Institute of Technology of Nantes}{Nantes, France}
-      {Technical Associate’s Degree in Computer Science}{Sep. 2022 -- Jun. 2024}
+      {Bachelor of Science in Computer Science (Data Structures, Algorithms, OOP, DBMS)}{Sep. 2022 -- Jun. 2024}
   \resumeSubHeadingListEnd
 
 
@@ -107,32 +100,34 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Research Intern -- Distributed DBMS Indexing}{May 2026 -- Aug. 2026}
+      {Research Intern -- Distributed Systems \& DBMS}{May 2026 -- Aug. 2026}
       {Coimbra Institute of Engineering}{Coimbra, Portugal}
       \resumeItemListStart
-        \resumeItem{Designed a decentralized multi-agent QNN and reinforcement learning architecture to optimize database index tuning.}
-        \resumeItem{Engineered an adaptive centralized learning router to eliminate workload skew and balance queries across replicas.}
+        \resumeItem{Engineered a multi-agent QNN and reinforcement learning framework (Python/Qiskit) for automated index tuning, paired with an adaptive router balancing query loads across distributed replicas.}
+        \resumeItem{Reduced \href{https://www.tpc.org/tpch/}{TPC-H} benchmark execution time by $\sim$50\% under high concurrency while mitigating node skew; co-authoring a research paper on the findings (in progress).}
       \resumeItemListEnd
         
     \resumeSubheading
-      {Web Developer Intern}{May 2025 -- July 2025}
-      {Nantes University -- DSIN}{Nantes, France}
+      {Software Engineer Intern}{May 2025 -- July 2025}
+      {Nantes University -- IT and Digital Services Department}{Nantes, France}
       \resumeItemListStart
-        \resumeItem{Optimized the 'Syllabus' Symfony web application, refactoring core modules to dynamically present course offerings.}
+        \resumeItem{Migrated the university course catalog platform 'Syllabus' to modern PHP and Symfony releases.}
+        \resumeItem{Streamlined CI/CD deployment pipelines and refactored core backend services to improve system reliability.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Web Developer Intern}{Apr. 2024 -- June 2024}
+      {Software Engineer Intern}{Apr. 2024 -- June 2024}
       {Kookline -- Web Development Agency}{Nantes, France}
       \resumeItemListStart
-        \resumeItem{Developed a custom WordPress web platform automating skydiving reservations and scheduling workflows.}
+        \resumeItem{Engineered a custom e-commerce and booking platform in PHP/MySQL for a skydiving service, processing reservation workflows and payments.}
+        \resumeItem{Developed custom modular backend extensions and hooks to integrate dynamic content and automated editorial publishing.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Academic Tutor}{Oct. 2023 -- July 2024}
+      {Academic Tutor in Computer Science}{Oct. 2023 -- July 2024}
       {University Institute of Technology of Nantes}{Nantes, France}
       \resumeItemListStart
-        \resumeItem{Mentored 50+ first-year students in core computer science, focusing on algorithms, OOP, data structures, and mathematics.}
+        \resumeItem{Guided undergraduate students through advanced programming, core data structures, graph algorithms, and OOP design principles.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -141,63 +136,51 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf{I2PoFM (Invisible Internet over FM)} $|$ \emph{Python, GNU Radio, I2P, SDR, Raspberry Pi}}{Feb. 2026 -- Mar. 2026}
+      {\textbf{I2PoFM (Covert Internet over Radio)} $|$ \emph{Python, GNU Radio, I2P, SDR, Linux}}{Feb. 2026 -- Mar. 2026}
         \resumeItemListStart
-          \resumeItem{Engineered a stealth communication system to multiplex encrypted IP traffic within standard FM radio broadcasts using GNU Radio, DSSS, and PCM techniques for complete signal inaudibility.}
-          \resumeItem{Integrated the decentralized I2P network layer onto Raspberry Pi hardware to route network packets covertly, achieving high data stealth, anonymity, and confidentiality.}
+          \resumeItem{Engineered a physical-layer protocol multiplexing encrypted IP packets over FM broadcasts using DSSS and PCM.}
+          \resumeItem{Deployed an autonomous routing gateway on Raspberry Pi nodes interfaced with I2P for fault-tolerant packet delivery and network security.}
         \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{\href{https://oniris-polytech.univ-nantes.io/sketchoscent/}{SketchOscent}} $|$ \emph{Python, Webpack, JavaScript, RDKit, PubChem}}{Sep. 2025 -- May 2026}
+      {\textbf{\href{https://oniris-polytech.univ-nantes.io/sketchoscent/}{SketchOscent}} $|$ \emph{Python, JavaScript, Webpack, Cheminformatics}}{Sep. 2025 -- May 2026}
         \resumeItemListStart
-          \resumeItem{Enhanced a cheminformatics web application mapping chemical functional groups to specific scent profiles using Python.}
-          \resumeItem{Integrated an automated code obfuscation pipeline into Webpack to effectively secure intellectual property.}
+          \resumeItem{Built algorithmic mapping routines connecting chemical functional groups to target olfactory descriptors.}
+          \resumeItem{Configured an automated Webpack AST obfuscation pipeline to secure proprietary processing code.}
         \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{PolyRisk} $|$ \emph{Python}}{Oct. 2025 -- Nov. 2025}
+      {\textbf{PolyRisk -- Autonomous Game Engine} $|$ \emph{Python, Algorithmic Decision Systems}}{Oct. 2025 -- Nov. 2025}
         \resumeItemListStart
-          \resumeItem{Developed intelligent AI agents for the Risk board game utilizing custom heuristics and Monte Carlo Tree Search (MCTS).}
+          \resumeItem{Implemented Monte Carlo Tree Search (MCTS) agents with custom heuristics for complex state-space evaluation.}
+          \resumeItem{Optimized tree traversal pruning to accelerate simulated decision rollouts across game branches.}
         \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{\href{https://github.com/roudy-h/dicewars}{Dice Wars}} $|$ \emph{C++}}{Nov. 2025 -- Jan. 2026}
+      {\textbf{\href{https://github.com/roudy-h/dicewars}{Dice Wars -- Strategy Game Engine}} $|$ \emph{C++, Object-Oriented Design}}{Nov. 2025 -- Jan. 2026}
         \resumeItemListStart
-          \resumeItem{Engineered a turn-based strategy game featuring heuristic-driven AI opponents and procedural map generation.}
+          \resumeItem{Built a turn-based strategy game featuring procedural map generation via Voronoi partitioning and graph connectivity.}
+          \resumeItem{Designed deterministic AI opponents using minimax-based evaluation while enforcing strict memory bounds.}
         \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{\href{https://github.com/syysy/ocean.s-26/tree/main/NDAROS}{NDAROS}} $|$ \emph{Python, Arduino, HTML/CSS, JavaScript}}{Feb. 2025 -- Mar. 2026}
+      {\textbf{Particles Engine} $|$ \emph{Go, Ebiten, Concurrent Computing, Data Structures}}{Dec. 2022 -- Jan. 2023}
         \resumeItemListStart
-          \resumeItem{Designed an interactive physical model with real-time Arduino algorithms demonstrating cosmic energy production.}
+          \resumeItem{Implemented a 2D physics engine using Go goroutines and worker pools for concurrent numerical simulation.}
+          \resumeItem{Optimized memory allocation and reduced GC pauses to maintain stable 60 FPS real-time rendering.}
         \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{\href{https://github.com/roudy-h/football-app}{Football App}} $|$ \emph{JS, Node.js, Express.js, Passport.js, React, Tailwind CSS}}{Mar 2024 -- Apr 2024}
-        \resumeItemListStart
-          \resumeItem{Built a full-stack platform with external REST API caching and an authenticated multi-user betting game.}
-        \resumeItemListEnd
   \resumeSubHeadingListEnd
-
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Go, Java, Kotlin, Python, C/C++, SQL (Oracle, MariaDB), MongoDB, HTML/CSS, JavaScript, R} \\
-     \textbf{Frameworks}{: Spring Boot, Angular, React, Node.js, Express.js, Symfony, Flask, JUnit} \\
-     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Microsoft Azure, VS Code, Visual Studio, IntelliJ} \\
-     \textbf{Languages Spoken}{: French (Native), English (Professional Working Proficiency), Arabic (Fluent), Kurdish (Native), German (A1)}
+     \textbf{Languages}{: Go, C/C++, Python, Java, Rust, Kotlin, SQL (PostgreSQL, MariaDB), JavaScript, Bash} \\
+     \textbf{Systems \& Cloud Infrastructure}{: Linux/Unix, Docker, Kubernetes, Google Cloud, AWS, Git, CI/CD, TCP/IP, DNS} \\
+     \textbf{Frameworks \& Libraries}{: Spring Boot, React, Node.js, Symfony, Flask, JUnit, GNU Radio, gRPC} \\
+     \textbf{Spoken Languages}{: French (Native), English (Professional B2), Arabic (Fluent), Kurdish (Native)}
      }}
- \end{itemize}
-
-
-%-----------INTERESTS-----------
-\section{Interests}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Hobbies \& Activities}{: Futsal, Board games, Open-Source Innovation, Traveling, Reading, Global current events}
-    }}
  \end{itemize}
 
 \end{document}
